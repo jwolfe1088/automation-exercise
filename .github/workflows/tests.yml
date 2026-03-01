@@ -24,4 +24,4 @@ jobs:
         env:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: pytest --headless
+        run: pytest --browser chromium --headed=false
